@@ -9,6 +9,13 @@ export class TargetAccountCodeStack extends cdk.Stack {
 
     // The code that defines your stack goes here
 
+    const eventBusPolicy = new events.CfnEventBusPolicy(this,"test",{
+      statementId: "MySid",
+      action: "events:PutEvents",
+      eventBusName: "default",
+      principal: "*"
+    });
+
     const consumerFn = new lambda.Function(this, "consumerLambda", {
       runtime: lambda.Runtime.NODEJS_12_X,
       code: lambda.Code.fromAsset("lambda"),
