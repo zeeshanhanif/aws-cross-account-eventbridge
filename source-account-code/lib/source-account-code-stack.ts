@@ -21,6 +21,7 @@ export class SourceAccountCodeStack extends cdk.Stack {
     events.EventBus.grantPutEvents(producerFn);
 
     // Target EventBus Loading using ARN
+    // Replace {TARGET_ACCOUNT_ID} with AWS account id that will receive event
     const targetEventBus = events.EventBus.fromEventBusArn(this,"TargetEventBus","arn:aws:events:us-west-2:{TARGET_ACCOUNT_ID}:event-bus/default");
 
     const ruleForExternalEventBus = new events.Rule(this, "ruleForExternalEventBus",{
