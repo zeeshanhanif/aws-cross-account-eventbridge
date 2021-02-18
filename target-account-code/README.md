@@ -1,5 +1,5 @@
 
-Need to added Resource Based Policy on Event bus of Target Account
+Need to add Resource Based Policy on Event bus of Target Account
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html
 https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html
 

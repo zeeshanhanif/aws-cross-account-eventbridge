@@ -18,7 +18,7 @@ EventBus Target is still not part of AWS CDK so I have used from one of its pull
 https://github.com/aws/aws-cdk/pull/12926
 
 ## Resource Based Policy -- In Target Account
-Need to added Resource Based Policy on Event bus of Target Account
+Need to add Resource Based Policy on Event bus of Target Account
 
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html
 
