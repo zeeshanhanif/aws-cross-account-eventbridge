@@ -1,3 +1,12 @@
+
+Cross-account access with Amazon EventBridge
+https://docs.aws.amazon.com/eventbridge/latest/userguide/eventbridge-cross-account-event-delivery.html
+https://aws.amazon.com/blogs/compute/simplifying-cross-account-access-with-amazon-eventbridge-resource-policies/
+
+## EventBus Target
+EventBus Target is still not part of AWS CDK so I have used from one of its pull request which will be part of AWS CDK in future, after that we will not require to use this code
+https://github.com/aws/aws-cdk/pull/12926
+
 # Welcome to your CDK TypeScript project!
 
 This is a blank project for TypeScript development with CDK.
